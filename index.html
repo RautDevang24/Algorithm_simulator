@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search & Sorting Simulator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Added playful emojis to header -->
+    <h1 id="animated-title">Algorithm Simulator 🧸🌟</h1>
+    
+    <label>Select Type:</label>
+    <select id="algoType" onchange="updateAlgoDropdown()">
+      <option value="searching">Searching</option>
+      <option value="sorting">Sorting</option>
+    </select>
+
+    <label>Select Algorithm:</label>
+    <select id="algorithmSelect"></select>
+
+    <!-- Only show search number for searching algorithms -->
+    <input type="number" id="searchNumber" placeholder="Enter number to search" style="display: none;">
+
+    <!-- New: User-defined array option with playful emoji -->
+    <label>Custom Array (comma separated) 🎨:</label>
+    <input type="text" id="userArrayInput" placeholder="e.g. 5, 12, 8, 20">
+
+    <div class="button-container">
+      <!-- Added emojis to buttons -->
+      <button onclick="showAlgorithmInfo()">Show Algorithm Info 🎉</button>
+      <button onclick="generateRandomArray()">Generate Random Array 🎈</button>
+      <button onclick="setUserArray()">Set Custom Array 🧸</button>
+      <button onclick="executeAlgorithm()">Run Algorithm 🚀</button>
+      <button onclick="resetSimulator()">Reset 🔄</button>
+    </div>
+
+    <div id="graphContainer"></div>
+    <div id="algoExplanation"></div>
+    <div id="algoSteps"></div>
+    
+    <!-- Audio element for winner sound -->
+    <audio id="winnerSound" src="winning-218995.mp3" preload="auto"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

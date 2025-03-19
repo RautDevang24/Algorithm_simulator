@@ -1,0 +1,101 @@
+body {
+    background-color: #EAD196;
+    font-family: 'Comic Sans MS', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #BF3131;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  label {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+  }
+  select {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin: 10px;
+  }
+  option {
+    color: black;
+  }
+  select, input {
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  button {
+    background-color: #7D0A0A;
+    color: #EEEEEE;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  button:hover {
+    background-color: rgb(191, 49, 49);
+  }
+  #graphContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 250px;
+    background-color: #EEEEEE;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  #graphContainer div {
+    margin: 5px;
+    background-color: rgb(125, 10, 10);
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    transition: height 1s ease, background-color 1s ease;
+  }
+  #algoExplanation {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+    text-align: left;
+  }
+  /* New styling for the steps log */
+  #algoSteps {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #F0F0F0;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  h1 {
+    color: #EEEEEE;
+    animation: bounce 2s infinite;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
